@@ -9,12 +9,13 @@ class YouDownload:
         # param = 'https://www.youtube.com/watch?v=y8PR4lTAh5E'
 
         self.executable = 'youtube-dl'
-        self.param = param
+        self.param = '--version'
 
         self.cmd = self.executable + ' ' + self.param    # used if shell=True
         self.cmd = self.cmd.split(' ')                   # used if shell=False
 
         # Set the download dir
+        # @ToDo use '~/Downloads' as default and make it a property
         self.usedir = '/home/th/Downloads/'
 
         # Use shell to execute the command
@@ -50,7 +51,7 @@ class YouDownload:
 
 
 # Test
-# download = YouDownload('--version')
-# print('Output: ', download.output)
-# print('Warning error: ', download.warning)
-# print('Returncode: ', download.returncode)
+download = YouDownload('--version')
+print('Output: ', download.output)
+print('Warning error: ', download.warning)
+print('Returncode: ', download.returncode)
