@@ -17,7 +17,7 @@ class SubProc:
     def parameters(self):
         return '{}'.format(self.param)
 
-    def run(self):
+    def runner(self):
         '''
         Use shell to execute the command
         '''
@@ -42,5 +42,5 @@ class SubProc:
 download = SubProc('youtube-dl', '--version')
 print(download.parameters)
 
-results = download.run()
+results = download.runner()
 print(results)

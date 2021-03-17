@@ -4,3 +4,5 @@ xclip -o > output_file.txt
 
 The single ">" mark will overwrite the existing contents of the output file. Instead of overwriting, you can simply append data into the output file using double ">>" symbols.
 xclip -o >> output_file.txt
+
+alternative is xsel. xclip leaves out open...
