@@ -13,8 +13,8 @@ def deloop():
         clipped = middleclip.runner()
 
         out = clipped[0]
-        err = clipped[1]
-        rc = clipped[2]
+        # err = clipped[1]
+        # rc = clipped[2]
 
         if out != clipboard:
             clipboard = out
