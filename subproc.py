@@ -44,11 +44,13 @@ class SubProc:
 
 
 # Test
-download = SubProc('youtube-dl', 'https://www.youtube.com/watch?v=iw-L8IC2Y8w', shell=True, cwd='/home/th/Downloads/')
-download2 = SubProc('youtube-dl', 'https://www.youtube.com/watch?v=tP6G2wDrUUU', shell=True, cwd='/home/th/Downloads/')
+if __name__ == '__main__':
 
-results = download.runner()
-results2 = download2.runner()
+    download = SubProc('youtube-dl', 'https://www.youtube.com/watch?v=iw-L8IC2Y8w', shell=True, cwd='/home/th/Downloads/')
+    download2 = SubProc('youtube-dl', 'https://www.youtube.com/watch?v=tP6G2wDrUUU', shell=True, cwd='/home/th/Downloads/')
 
-# print(results)
-# print(results2)
+    results = download.runner()
+    results2 = download2.runner()
+
+    # print(results)
+    # print(results2)

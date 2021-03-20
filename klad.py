@@ -1,12 +1,17 @@
-import time
+import youtube_dl
 
-def executeSomething():
-    #code here
-    print('hallo')
-    time.sleep(10)
+print(youtube_dl.YoutubeDL.values)
 
-while True:
-    executeSomething()
+
+# import time
+
+# def executeSomething():
+#     #code here
+#     print('hallo')
+#     time.sleep(10)
+
+# while True:
+#     executeSomething()
 
 
 # ###
@@ -15,7 +20,7 @@ while True:
 # def call_repeatedly(interval, func, *args):
 #     stopped = Event()
 #     def loop():
-#         while not stopped.wait(interval): # the first call is in `interval` secs
+#         while not stopped.wait(interval): # 1st call is in `interval` secs
 #             func(*args)
 #     Thread(target=loop).start()
 #     return stopped.set
